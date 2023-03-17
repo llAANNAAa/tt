@@ -65,7 +65,7 @@ int main(void)
 			break;
 	}
 	
-	print("오름차순으로 정리한 후 맨 앞과 맨 뒤의 요소를 제거해보기");
+	print("오름차순으로 정리한 후 맨 앞과 맨 뒤의 요소를 제거해보기!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         touched by llAANNAAa
 
 	 print(objArray);
