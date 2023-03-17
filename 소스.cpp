@@ -33,13 +33,13 @@ void print(vector<Circle> &objj)
 }
 
 
-bool compare1(Circle& a, Circle& b)     // ¿À¸§Â÷¼ø
+bool compare1(Circle& a, Circle& b)     // ì˜¤ë¦„ì°¨ìˆœ
 {
 	return a.get_radius() < b.get_radius();
 		 
 }
 
-bool compare2(Circle& a, Circle& b)     // ³»¸²Â÷¼ø
+bool compare2(Circle& a, Circle& b)     // ë‚´ë¦¼ì°¨ìˆœ
 {
 	return a.get_radius() > b.get_radius();
 }
@@ -64,30 +64,35 @@ int main(void)
 		else if (ch == 'q')
 			break;
 	}
+	
+	print("ì˜¤ë¦„ì°¨ìˆœìœ¼ë¡œ ì •ë¦¬í•œ í›„ ë§¨ ì•ê³¼ ë§¨ ë’¤ì˜ ìš”ì†Œë¥¼ ì œê±°í•´ë³´ê¸°");
+        touched by llAANNAAa
 
 	 print(objArray);
 
-	 sort(objArray.begin(), objArray.end(), compare1);  //¿À¸§Â÷¼ø´ë·Î Á¤¸®ÇÏ±â
+	 sort(objArray.begin(), objArray.end(), compare1);  //ì˜¤ë¦„ì°¨ìˆœëŒ€ë¡œ ì •ë¦¬í•˜ê¸°
 
 	 cout << endl;
-	 cout << "------¿À¸§Â÷¼ø´ë·Î Á¤·Ä-------" << endl;
+	 cout << "------ì˜¤ë¦„ì°¨ìˆœëŒ€ë¡œ ì •ë ¬-------" << endl;
 	 print(objArray);
 
-	 cout << "-------Á¦°ÅÇÑ °á°ú---------" << endl;
+	 cout << "-------ì œê±°í•œ ê²°ê³¼---------" << endl;
 	 objArray.erase(objArray.begin());
 	 objArray.erase(objArray.begin()+objArray.size()-1);
 
 	 print(objArray);
 
 	 
+        print("ë‚´ë¦¼ì°¨ìˆœìœ¼ë¡œ ì •ë¦¬í•œ í›„ ë§¨ ì•ê³¼ ë§¨ ë’¤ì˜ ìš”ì†Œë¥¼ ì œê±°í•´ë³´ê¸°");
+	touched by llAANNAAa
 
-	 sort(objArray2.begin(), objArray2.end(), compare2);  //³»¸²Â÷¼ø´ë·Î Á¤¸®ÇÏ±â
+	 sort(objArray2.begin(), objArray2.end(), compare2);  //ë‚´ë¦¼ì°¨ìˆœëŒ€ë¡œ ì •ë¦¬í•˜ê¸°
 
 	 cout << endl;
-	 cout << "------³»¸²Â÷¼ø´ë·Î Á¤·Ä-------" << endl;
+	 cout << "------ë‚´ë¦¼ì°¨ìˆœëŒ€ë¡œ ì •ë ¬-------" << endl;
 	 print(objArray2);
 
-	 cout << "-------Á¦°ÅÇÑ °á°ú---------" << endl;
+	 cout << "-------ì œê±°í•œ ê²°ê³¼---------" << endl;
 	 objArray2.erase(objArray2.begin());
 	 objArray2.erase(objArray2.begin() + objArray2.size() - 1);
 
